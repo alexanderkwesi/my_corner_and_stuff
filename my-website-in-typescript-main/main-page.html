@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="refresh" content="50131" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="description" content="Snowpack Application" />
+    <link rel="stylesheet" type="text/css" href="./index.css"/>
+   <!-- <script type="text/javascript" src="./jquery-3.7.1.min.js"></script>-->
+    <script type="text/javascript" src="./jquery-3.7.1.js"></script>
+    <title> TypeScript: My, World! </title>
+</head>
+<body>
+ <!--<h1><div id="heading_1"></div></h1>*/-->
+    <!--<h1><div id="heading_2"></div></h1>-->
+    <section class="head">
+    
+        <div class="arrow">
+            
+            <svg class="arrow_svg" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-box-arrow-down-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8.636 12.5a.5.5 0 0 1-.5.5H1.5A1.5 1.5 0 0 1 0 11.5v-10A1.5 1.5 0 0 1 1.5 0h10A1.5 1.5 0 0 1 13 1.5v6.636a.5.5 0 0 1-1 0V1.5a.5.5 0 0 0-.5-.5h-10a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h6.636a.5.5 0 0 1 .5.5"/>
+                <path fill-rule="evenodd" d="M16 15.5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1 0-1h3.793L6.146 6.854a.5.5 0 1 1 .708-.708L15 14.293V10.5a.5.5 0 0 1 1 0z"/>
+            </svg>
+
+        </div>
+        
+        <div class="name">
+            <a href='main-page.html'>-</a>
+            Alexander Oluwaseun Kwesi's Corner and Stuff :: 
+        </div>
+        <div class="kiko_text"></div>    
+        <div class="linkedin">
+            <a href="https://www.linkedIn.com/in/alexanderoluwaseunkwesi" class="linkedIn">
+            <svg class="linkedin_img" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+              </svg>
+            </a>
+        </div>
+           
+        <div class="discord">
+            <a href="https://discord.com/channels/@me" class="Discord">
+            <svg class="discord_img" xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+                <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
+            </svg>
+            </a>
+        </div>
+            
+        <div>
+        <a id="anchortag" onclick="copyText()" class="button-30"><svg class="svg" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-chevron-bar-expand" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M3.646 10.146a.5.5 0 0 1 .708 0L8 13.793l3.646-3.647a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 0-.708m0-4.292a.5.5 0 0 0 .708 0L8 2.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8"/>
+          </svg>
+        </a>
+        </div>
+        <div class="curved_inner_border">
+
+        </div>
+        
+    </section>
+    </section>
+    <section class="side_bar">
+        <div class="logo">
+        </div>
+        <div id="_one" class="one">
+            <a href="#corner"></a>
+            My Corner
+        </div>
+        <div id='_two' class="two">
+            <a href="#stuff"></a>
+            My Stuff
+        </div>
+        <div class="_Power">
+            <a href="#powerup"></a>
+            Power Up
+        </div>
+        <div class="_Flip">
+            <a href="#theflip"></a>
+            Monetiser - The Flip
+        </div>
+    </section>
+    <section id="middle_container-section" class="middle_container">
+        <div class="container">
+            <div class="title">
+                <h1>SUPER-POWERS</h1>
+            </div>
+            <div class="ghost">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        
+        <div class="img_container">
+            <div class="super_powers_img"></div>
+        </div>
+        <div></div>
+        <div id="imgsrc" >
+        </div>
+   
+    <aside class="body_" >
+        <div class="waviy">
+          <span style="--i:1">S</span>
+          <span style="--i:2">U</span>
+          <span style="--i:3">P</span>
+          <span style="--i:4">E</span>
+          <span style="--i:5">R</span>
+          <span style="--i:6">-</span>
+          <span style="--i:7">S</span>
+          <span style="--i:8">P</span>
+          <span style="--i:9">E</span>
+          <span style="--i:10">E</span>
+          <span style="--i:11">D</span>
+         </div>
+    
+        <div class="text-js" >I could complete tasks quicker, meet tight deadlines, and handle multiple projects simultaneously</div>
+    </aside>
+    <section class="body_used">
+    <aside class="enhanced-container">
+        <div class="page-ani">Enhanced Problem Solving</div>
+        <div class="body-used-text-js">Having an innate ability to quickly analyse complex problems and identify effective solutions would be highly advantageous</div>
+    </aside>
+   </section>
+   
+   <section class="body_aside">
+    <section class="patterns">
+    <svg width="500">
+   <text x="250" y="50" text-anchor="middle" >
+                INSTANT LEARNING
+    </text>
+   </svg>
+   </div>
+   </div>
+   <div class="body-aside-text-js">The power to acquire and master new programming languages, frameworks, or technologies instantly is  invaluable for me as a software developer</div>
+    </section>
+  </section>
+  
+  
+
+  <section class="containers" >
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h3 class="animate-charcter">Exceptional Debugging Abilities</h3>
+      </div>
+      <div class="containers-text-js"> With this ability, I am able to eliminate issues quickly, resulting in more stable and reliable software</div>
+    </div>
+</section>
+<section class="contain">
+<section class="unlimited">
+    <main>
+    <div class="variable">
+      <span class="work">UNLI</span>MITED
+    </div>
+    <div class="static">CREATIVITY</div>
+    </main>
+    <div class="contain-text-js">The ability to think outside the box and come up with innovative solutions to complex problems greatly enhances my work</div>
+  </section>
+</section>
+</section>
+<section id="transition" class="transition"></section>
+<script type="text/javascript" src="greeter.js"></script>
+<section class="body_container">
+    <section id="section-div-middle-my-corner" class="second-div-my-corner-middle-container">
+        <a id="corner"></a>
+        <div class="section_">
+             ->&nbsp;&nbsp;&nbsp;<div class="hi">Hi, I am Alexander Oluwaseun Kwesi</div>&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;
+            <div class="sp">Spatial Expert</div>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+            <div class="cs">Cyber Securities</div>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+            <div class="fswbd">Full Stack Web Developer</div>&nbsp;&nbsp;&nbsp;
+        </div>
+        <br/>
+        <div class="quote_me">
+            'Passionate about creating cutting-edge solutions, I bring a robust six-year track record as a Full Stack Developer 
+            <br/>
+            with expertise in both front-end and back-end technologies. Specializing in TypeScript, JavaScript, Python, C++, and
+            <br/>
+            C#, I have honed my skills in crafting responsive web applications and robust software solutions that enhance user 
+            <br/>
+            experience and drive business objectives.
+            <br/>
+            My career has flourished in diverse settings, from innovative tech startups like Bune Bear in the UK to structured
+            <br/>
+            corporate environments like UVC Legal. These roles have not only refined my technical abilities but also strengthened 
+            <br/>
+            my leadership and collaborative skills. As a former vice president and course representative, I excel in team settings,
+            <br/>
+            easily translating complex technical details into understandable terms for cross-functional teams and stakeholders.
+            <br/>
+            Currently, I am expanding my technical toolkit by diving into Rust and Assembly language, staying ahead of industry 
+            <br/>
+            trends and broadening my development capabilities. My commitment to continuous learning and adaptation is complemented
+            <br/>
+            by my involvement in various leadership roles, including mentoring young developers and leading project teams to success
+            <br/>
+            in high-pressure environments.
+            <br/>
+            As a software engineer deeply committed to ethical practices and social responsibility, I seek to join organizations 
+            <br/>
+            like AI Governance, where I can contribute to impactful projects and further the integration of AI with respect for user 
+            <br/>
+            privacy and data security.'
+        </div>
+    </section>
+</section>
+<section id="purple-transition" class="purple-transition"></section>
+<section class="purple-container">
+    <section id="purple-middle-container" class="purple-middle-container">
+        <a id="corner"></a>
+            <div id="stuff" class="stuff">My Stuff</div><div class="wait-anim"><div class="line">---------------------------------------------------------------</div><a class="mail" href="mailto:seankwesi24@googlemail.com"><p class="p1">Need</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="p2">a job done</p>&nbsp;&nbsp;&nbsp;<p class="p3">contact</p>&nbsp;&nbsp;&nbsp;<p class="p4">KIKO STUDIO's</p></a></div>
+            <div class="gwatney"><p class="logo_g">Logo Designed on Desing.com<p class="kiko_g">by KIKO STUDIOS<p/><p class="zoom_g">View Larger Image</p><p class="zoom_vsg">View Small Image</p></p></div>
+            <div class="uvclegal"><p class="uvclegal_g">UVC Legal Website Designed<p class="kiko_g">by KIKO STUDIO's<p/><p class="uvczoom_g">View Larger Image</p><p class="uvczoom_vsg">View Small Image</p></p><p class="uvc_website"><a href="https://www.uvclegal.uk">Click to go to Website</a></p></div>
+            <div class="predictive1_"><p class="predictive1_g">Predictive System<br/>Website Designed<p class="pkiko1_g">by KIKO STUDIO's<br/>for Educational Purposes<p/><p class="pzoom1_g">View Larger Image</p><p class="pzoom1_vsg">View Small Image</p></p></div>
+            <div class="predictive2_"><p class="predictive2_g">Predictive System<br/>Website Designed<p class="pkiko2_g">by KIKO STUDIO's<br/>for Educational Purposes<p/><p class="pzoom2_g">View Larger Image</p><p class="pzoom2_vsg">View Small Image</p></p></div>
+            <div class="spatial_db"><p class="spatial_db_g">Spatial Analysis<br/>Website Designed<p class="spkiko_g">by KIKO STUDIO's<br/>for Educational Purposes<p/><p class="spzoom_g">View Larger Image</p><p class="spzoom_vsg">View Small Image</p></p></div>
+            <div class="spatial_db2"><p class="spatial_db2_g">Spatial Analysis<br/>Website Designed<p class="spkiko2_g">by KIKO STUDIO's<br/>for Educational Purposes<p/><p class="spzoom2_g">View Larger Image</p><p class="spzoom2_vsg">View Small Image</p></p></div>
+            <div class="uvcpersonnel"><p class="uvcpersonnel_g">UVC Personnel<br/>Website Designed<p class="uvcpkiko_g">by KIKO STUDIO's<br/>for Educational Purposes<p/><p class="uvcpzoom_g">View Larger Image</p><p class="uvcpzoom_vsg">View Small Image</p></p><p class="uvc2_website"><a href="https://www.uvcpersonnel.net">Click to go to Website</a></p></div>
+            <div class="box-spacing"></div>
+            <div class="opaque_btn_background"><div class="button_right">&GreaterGreater;</div></div>
+    </section>
+</section>
+
+<section id="yellow-transition" class="yellow-transition"></section>
+<section class="yellow-container">
+    <section id="yellow-middle-container" class="yellow-middle-container">
+        <a id="corner"></a>
+        <h1 class="scri">Power Up With A Calculator Rest API</h1>
+        <section class="calculators">
+        <input type="Text" id="calculator_field" class="calculator_field"/>     
+        <div id='_1' class="_1">1</div>
+        <div id='_2' class="_2">2</div>
+        <div id='_3' class="_3">3</div>
+        <div id='_4' class="_4">4</div>
+        <div id='_5' class="_5">5</div>
+        </section>
+        <section class="calculators2_">
+        <div id='_6' class="_6">6</div>
+        <div id='_7' class="_7">7</div>
+        <div id='_8' class="_8">8</div>
+        <div id='_9' class="_9">9</div>
+        <div id='_0' class="_0">0</div>
+        </section>
+        <section class="calculators3_">
+        <div class="_log">log</div>
+        <div class="_cos">cos</div>
+        <div class="_sin">sin</div> 
+        <div class="_tan">tan</div> 
+        <div class="_add">+</div>
+        </section>
+        <section class="calculator4_">
+        <div class="_subtract">-</div>
+        <div class="_multiply">*</div> 
+        <div class="_divide">/</div> 
+        <div class="_backspace"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="24" fill="currentColor" class="bi bi-backspace-fill _btn_backspace" viewBox="0 0 16 16">
+            <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8z"/>
+          </svg></div>
+          <div id="equity" class="equity">=</div> 
+        </section>
+        <script src="./src/calculator.js"></script>
+    </section>
+</section>
+
+
+<section id="grey-transition" class="grey-transition"></section>
+<section class="grey-container">
+    <section id="grey-middle-container" class="grey-middle-container">
+        <a id="corner"></a>
+        <h1 class="monetiser">Monetiser - The Cost of My Services For A Flip</h1>
+        <section class="web_developer">
+            <div class="web_">Web Development</div>
+            <div class="front_">Front End Development in any Language you choose</div>
+            <div class="responsive_">Responsive Design for Mobile, Desktop, and Laptop</div>
+            <div class="User_">User Expereince (UX) Design - Crating  intuitive layouts, and navigation</div>
+            <div class="Website_">Website Maintenance</div>
+            <div class="money_1">£ 3000</div>
+        </section>
+        <section class="full_stack_developer">
+            <div class="full_">Full Stack Development</div>
+            <div class="front_end">Front End Development</div>
+            <div class="back_">Back End Development</div>
+            <div class="Api">API Development</div>
+            <div class="database_">Database Design and Maintenance</div>
+            <div class="money_2">£ 5000</div>
+        </section>
+        <section class="software_developer">
+            <div class="soft_">Software Development</div>
+            <div class="sdev_">Software Development</div>
+            <div class="custom_">Custom Software Solutions</div>
+            <div class="app_">Application Architecture</div>
+            <div class="per_">Perfomance Optimisation</div>
+            <div class="money_3">£ 9000</div>
+        </section>
+    </section>
+</section>
+
+<script type="text/javascript" src="middle.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+<div class="small"></div>
+<div class="big"></div>
+    
+   <!-- <script type="module" src="index.js"></script> -->
+</body>
+
+</html>
+<script type="text/javascript">
+    window.onload = function() {
+    if (window.jQuery) {  
+        // jQuery is loaded  
+       // alert("jQuery is loaded!");
+        $('.uvc_website').hide();
+        $('.uvc2_website').hide();
+    } else {
+        // jQuery is not loaded
+        //alert("jQuery is not loaded");
+       
+    }
+}
+
+
+
+  $(document).ready(function() {
+
+
+    function hiddencorner()
+    {
+       $('.transition').css('visibility', 'visible'); 
+       $('.transition').show();
+       $(".transition").removeClass("anim-trans");
+        $('.second-div-my-corner-middle-container').show();
+        $('body').css('background-color', 'white');  
+        $('.purple-middle-container').hide(); 
+        $('.purple-transition').hide(); 
+        $('.yellow-middle-container').hide();
+        $('.yellow-transition').hide(); 
+        $('.grey-middle-container').hide();
+        $('.grey-transition').hide(); 
+        $('.uvc_website').hide();
+        $('.uvc2_website').hide();
+        
+    }
+
+    function hiddencornerpurple()
+    {
+       $('.purple-transition').css('visibility', 'visible'); 
+       $('.purple-transition').show();
+       $(".purple-transition").removeClass("anim-trans-purple");
+        $('.purple-middle-container').show();
+        $('body').css('background-color', 'white'); 
+        $('.second-div-my-corner-middle-container').hide();
+        $('.yellow-middle-container').hide();
+        $('.yellow-transition').hide(); 
+        $('.transition').hide();
+        $('.grey-middle-container').hide();
+        $('.grey-transition').hide();
+        $('.uvc_website').hide();
+        $('.uvc2_website').hide(); 
+    }
+
+    function hiddencornercyan()
+    {
+       $('.yellow-transition').css('visibility', 'visible'); 
+       $('.yellow-transition').show();
+       $('.yellow-container').show();
+       $(".yellow-transition").removeClass("anim-trans-yellow");
+       $('.yellow-middle-container').addClass('yellow_middle_corner_over');
+       $('.yellow-middle-container').css('visibility', 'visible');
+        $('.yellow-middle-container').show();
+        $('body').css('background-color', 'white'); 
+        $('.second-div-my-corner-middle-container').hide();
+        $('.purple-middle-container').hide();
+        $('.grey-middle-container').hide();
+        $('.grey-transition').hide(); 
+        $('.transition').hide();
+        $('.uvc_website').hide();
+        $('.uvc2_website').hide();
+    }
+
+
+
+    function hiddencornergrey()
+    {
+       $('.grey-transition').css('visibility', 'visible');
+       $('.grey-middle-container').css('visibility', 'visible');
+       $('.grey-transition').show();
+       $('.grey-container').show();
+       $('.grey-middle-container').addClass('grey_middle_corner_over');
+       $('.grey-middle-container').show();
+       $(".grey-transition").removeClass("anim-trans-grey");
+        $('body').css('background-color', 'white'); 
+        $('.second-div-my-corner-middle-container').hide();
+        $('.purple-middle-container').hide();
+        $('.yellow-middle-container').hide();
+        $('.yellow-transition').hide(); 
+        $('.transition').hide();
+        $('.uvc_website').hide();
+        $('.uvc2_website').hide();
+    }
+
+
+$(".one").on('click', function() {
+event.preventDefault();
+$('.transition').css('visibility', 'visible');
+$(".transition").addClass("anim-trans");
+$('.second-div-my-corner-middle-container').css('visibility', 'visible');
+$('.container').hide();
+$('.containers').hide();
+$('.body_used').hide();
+$('.body_').hide();
+$('.body_aside').hide();
+$('.contain').hide();
+$('.img_container').hide();
+$('.purple-transition').css('visibility', 'hidden');
+$('.yellow-container').hide();
+$('.grey-container').hide();
+$('.second-div-my-corner-middle-container').addClass('middle_container_over');
+$('.uvc_website').hide();
+$('.uvc2_website').hide();
+hiddencorner().delay(1);
+});
+
+function mouse() {
+    $('.transition').css('visibility', 'hidden');
+    $('.purple-transition').css('visibility', 'hidden');
+    $('.grey-transition').css('visibility', 'hidden');
+    $('.yellow-transition').css('visibility', 'hidden');
+    $('.body_container').css('visibility', 'visible');
+    $('.grey-middle-container').removeClass('grey_middle_container_over'); 
+    $('.yellow-middle-container').removeClass('yellow_middle_container_over'); 
+    $('.purple-middle-container').removeClass('purple_middle_container_over');
+    $('.second-div-my-corner-middle-container').removeClass('middle_container_over');
+}
+
+$('.big', '.stuff').one('mousemove',function(){
+   mouse.delay(1);
+});
+
+$('.stuff', this, '.hi').one('click', function(){
+mouse.delay(1);
+});
+
+$('.two').click(function() {
+  event.preventDefault();
+  $('.purple-transition').css('visibility', 'visible');
+  $(".purple-transition").addClass("anim-trans-purple");
+  $('.purple-middle-container').css('visibility', 'visible');
+  $('.img_container').hide();
+  $('.container').hide();
+  $('.containers').hide();
+  $('.body_used').hide();
+  $('.body_').hide();
+  $('.body_aside').hide();
+  $('.contain').hide();
+  $('.transition').hide();
+  $('.yellow-container').hide();
+  $('.grey-container').hide();
+  $('.second-div-my-corner-middle-container').hide();
+  $('.purple-middle-container').addClass('purple_middle_container_over');
+  $('.uvc_website').show();
+  $('.uvc2_website').show();
+  hiddencornerpurple().delay(1);
+});
+
+$('.purple-middle-container').mouseover(function(){
+    event.preventDefault();
+    $('.uvc_website').show();
+    $('.uvc2_website').show();
+});
+$('.purple-middle-container').mouseout(function(){
+    event.preventDefault();
+    $('.uvc_website').hide();
+    $('.uvc2_website').hide();
+});
+
+$('._Power').click(function() {
+  event.preventDefault();
+  $('.yellow-transition').css('visibility', 'visible');
+  $('.yellow-transition').addClass('anim-trans-yellow');
+  $('.yellow-middle-container').css('visibility', 'visible');
+  $('.yellow-middle-container').addClass('yellow_middle_container_over');
+  $('.yellow-middle-container').show();
+  $('.img_container').hide();
+  $('.container').hide();
+  $('.containers').hide();
+  $('.body_used').hide();
+  $('.body_').hide();
+  $('.body_aside').hide();
+  $('.contain').hide();
+  $(".transition").hide();
+  $('.grey-container').hide();
+  $('.purple-transition').hide(); 
+  $('.second-div-my-corner-middle-container').hide();
+  $('.uvc_website').hide();
+  $('.uvc2_website').hide();
+  hiddencornercyan().delay(1);
+});
+
+
+$('._Flip').click(function() {
+    event.preventDefault();
+    $('.grey-transition').css('visibility', 'visible');
+    $('.grey-transition').addClass('anim-trans-grey');
+    $('.grey-middle-container').css('visibility', 'visible');
+    $('.grey-middle-container').show();
+    $('.grey-middle-container').addClass('grey_middle_container_over');
+    $('.img_container').hide();
+    $('.container').hide();
+    $('.containers').hide();
+    $('.body_used').hide();
+    $('.body_').hide();
+    $('.body_aside').hide();
+    $('.contain').hide();
+    $(".transition").hide();
+    $('.yellow-container').hide();
+    $('.purple-transition').hide();
+    $('.second-div-my-corner-middle-container').hide();
+    $('.uvc_website').hide();
+    $('.uvc2_website').hide();
+    hiddencornergrey().delay(1);
+  });
+
+
+
+
+
+
+
+
+
+
+
+  });
+
+
+const cursorSmall = document.querySelector('.small');
+
+const cursorBig = document.querySelector('.big');
+
+
+const positionElement = (e)=> {
+const mouseY = e.offsetY;
+const mouseX = e.offsetX;
+   
+  
+cursorSmall.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+cursorBig.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+}
+
+window.addEventListener('mouseover', positionElement);
+
+$(document).ready(function() {
+  
+  $('.calculator_field').val(0);
+ 
+  });
+
+// $('.container').mouseout(function(){
+   // $('.container').fadeOut(1000);
+   // $('.img_container').css('margin-top', '-5%');
+
+//});
+
+
+
+
+$('.title').mouseover(function(){
+    $('.container').fadeOut(1000);
+    $('.img_container').css('margin-top', '-5%');
+    $('.body_').css('visibility', 'visible');
+    $('.body_used').css('visibility', 'visible');
+    $('.body_aside').css('visibility', 'visible');
+    $('.containers').css('visibility', 'visible');
+    $('.contain').css('visibility', 'visible');
+});
+
+
+
+$('.zoom_g').on('click', function(){
+$('.zoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.gwatney').addClass('new_zoom_g');
+$('.zoom_vsg').show();
+$('.zoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.zoom_g').hide();
+});
+
+
+
+$('.zoom_vsg').on('click', function(){
+    $('.gwatney').removeClass('new_zoom_g');
+    $('.zoom_vsg').hide(); 
+    $('.zoom_vsg').css({"visibility": "visible", "cursor": "pointer"}); 
+    $('.gwatney').addClass('gwatney'); 
+    $('.zoom_g').show(); 
+});
+
+
+$('.zoom_g').on('click', function(){
+$('.zoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.gwatney').addClass('new_zoom_g');
+$('.zoom_vsg').show();
+$('.zoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.zoom_g').hide();
+});
+
+
+
+$('.uvczoom_vsg').on('click', function(){
+    $('.uvclegal').removeClass('new_uvczoom_g');
+    $('.uvczoom_vsg').hide(); 
+    $('.uvczoom_vsg').css({"visibility": "visible", "cursor": "pointer"}); 
+    $('.uvclegal').addClass('uvclegal'); 
+    $('.uvczoom_g').show(); 
+    $('.uvc_website').show();
+    $('.uvc2_website').show();
+});
+
+
+
+
+$('.uvczoom_g').on('click', function(){
+$('.uvczoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.uvclegal').addClass('new_uvczoom_g');
+$('.uvczoom_vsg').show();
+$('.uvczoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.uvczoom_g').hide();
+$('.uvc_website').show();
+$('.uvc2_website').show();
+});
+
+
+
+
+$('.pzoom1_g').on('click', function(){
+    $('.pzoom1_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+    $('.predictive1_').addClass('new_pzoom1_g');
+    $('.pzoom1_vsg').show();
+    $('.pzoom1_vsg').css({"visibility": "visible", "cursor": "pointer"});
+    $('.pzoom1_g').hide();
+});
+
+
+$('.pzoom1_vsg').on('click', function(){
+$('.predictive1_').removeClass('new_pzoom1_g');
+$('.pzoom1_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.predictive1_').addClass('predictive1_');
+$('.pzoom1_g').show();
+$('.pzoom1_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.pzoom1_vsg').hide();
+});
+
+
+$('.pzoom2_g').on('click', function(){
+    $('.pzoom2_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+    $('.predictive2_').addClass('new_pzoom2_g');
+    $('.pzoom2_vsg').show();
+    $('.pzoom2_vsg').css({"visibility": "visible", "cursor": "pointer"});
+    $('.pzoom2_g').hide();
+});
+
+
+$('.pzoom2_vsg').on('click', function(){
+    $('.predictive2_').removeClass('new_pzoom2_g');
+$('.pzoom2_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.predictive2_').addClass('predictive2_');
+$('.pzoom2_g').show();
+$('.pzoom2_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.pzoom2_vsg').hide();
+});
+
+
+$('.spzoom_g').on('click', function(){
+    $('.spzoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+    $('.spatial_db').addClass('new_spzoom_g');
+    $('.spzoom_vsg').show();
+    $('.spzoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
+    $('.spzoom_g').hide();
+});
+
+
+$('.spzoom_vsg').on('click', function(){
+$('.spatial_db').removeClass('new_spzoom_g');
+$('.spzoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.spatial_db').addClass('spatial_db');
+$('.spzoom_g').show();
+$('.spzoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.spzoom_vsg').hide();
+});
+
+
+
+$('.spzoom2_g').on('click', function(){
+    $('.spzoom2_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+    $('.spatial_db2').addClass('new_spzoom2_g');
+    $('.spzoom2_vsg').show();
+    $('.spzoom2_vsg').css({"visibility": "visible", "cursor": "pointer"});
+    $('.spzoom2_g').hide();
+});
+
+
+$('.spzoom2_vsg').on('click', function(){
+$('.spatial_db2').removeClass('new_spzoom2_g');
+$('.spzoom2_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.spatial_db2').addClass('spatial_db2');
+$('.spzoom2_g').show();
+$('.spzoom2_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.spzoom2_vsg').hide();
+});
+
+
+
+$('.uvcpzoom_g').on('click', function(){
+    $('.uvcpzoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+    $('.uvcpersonnel').addClass('new_uvcpzoom_g');
+    $('.uvcpzoom_vsg').show();
+    $('.uvcpzoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
+    $('.uvcpzoom_g').hide();
+    $('.uvc_website').show();
+    $('.uvc2_website').show();
+});
+
+
+$('.uvcpzoom_vsg').on('click', function(){
+$('.uvcpersonnel').removeClass('new_uvcpzoom_g');
+$('.uvcpzoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.uvcpersonnel').addClass('uvcpersonnel');
+$('.uvcpzoom_g').show();
+$('.uvcpzoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.uvcpzoom_vsg').hide();
+$('.uvc_website').show();
+$('.uvc2_website').show();
+});
+
+
+
+
+
+
+
+var txt =  $('.zoom_g').text();
+if (txt == 'View Larger Image')
+{
+
+    $('.gwatney').addClass('gwatney');
+    $('.zoom_vsg').show();
+
+    $('.zoom_g').on('click', function(){
+$('.zoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.gwatney').addClass('new_zoom_g');
+$('.zoom_vsg').show();
+$('.zoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.zoom_g').hide();
+});
+
+
+
+$('.zoom_vsg').on('click', function(){
+    $('.gwatney').removeClass('new_zoom_g');
+    $('.zoom_vsg').hide(); 
+    $('.zoom_vsg').css({"visibility": "visible", "cursor": "pointer"}); 
+    $('.gwatney').addClass('gwatney'); 
+    $('.zoom_g').show(); 
+});
+
+
+$('.uvclegal').addClass('uvclegal');
+    $('.uvczoom_vsg').show();
+
+
+$('.uvczoom_vsg').on('click', function(){
+    $('.uvclegal').removeClass('new_uvczoom_g');
+    $('.uvczoom_vsg').hide(); 
+    $('.uvczoom_vsg').css({"visibility": "visible", "cursor": "pointer"}); 
+    $('.uvclegal').addClass('uvclegal'); 
+    $('.uvczoom_g').show(); 
+});
+
+
+$('.uvczoom_g').on('click', function(){
+$('.uvczoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.uvclegal').addClass('new_uvczoom_g');
+$('.uvczoom_vsg').show();
+$('.uvczoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.uvczoom_g').hide();
+});
+
+
+$('.pzoom1_g').on('click', function(){
+    $('.pzoom1_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+    $('.predictive1_').addClass('new_pzoom1_g');
+    $('.pzoom1_vsg').show();
+    $('.pzoom1_vsg').css({"visibility": "visible", "cursor": "pointer"});
+    $('.pzoom1_g').hide();
+});
+
+
+$('.pzoom1_vsg').on('click', function(){
+    $('.predictive1_').removeClass('new_pzoom1_g');
+$('.pzoom1_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.predictive1_').addClass('predictive1_');
+$('.pzoom1_g').show();
+$('.pzoom1_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.pzoom1_vsg').hide();
+});
+
+$('.pzoom2_g').on('click', function(){
+    $('.pzoom2_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+    $('.predictive2_').addClass('new_pzoom2_g');
+    $('.pzoom2_vsg').show();
+    $('.pzoom2_vsg').css({"visibility": "visible", "cursor": "pointer"});
+    $('.pzoom2_g').hide();
+});
+
+
+$('.pzoom2_vsg').on('click', function(){
+    $('.predictive2_').removeClass('new_pzoom2_g');
+$('.pzoom2_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.predictive2_').addClass('predictive2_');
+$('.pzoom2_g').show();
+$('.pzoom2_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.pzoom2_vsg').hide();
+});
+
+$('.spzoom_g').on('click', function(){
+    $('.spzoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+    $('.spatial_db').addClass('new_spzoom_g');
+    $('.spzoom_vsg').show();
+    $('.spzoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
+    $('.spzoom_g').hide();
+});
+
+
+$('.spzoom_vsg').on('click', function(){
+$('.spatial_db').removeClass('new_spzoom_g');
+$('.spzoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.spatial_db').addClass('spatial_db');
+$('.spzoom_g').show();
+$('.spzoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.spzoom_vsg').hide();
+});
+
+
+$('.spzoom2_g').on('click', function(){
+    $('.spzoom2_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+    $('.spatial_db2').addClass('new_spzoom2_g');
+    $('.spzoom2_vsg').show();
+    $('.spzoom2_vsg').css({"visibility": "visible", "cursor": "pointer"});
+    $('.spzoom2_g').hide();
+});
+
+
+$('.spzoom2_vsg').on('click', function(){
+$('.spatial_db2').removeClass('new_spzoom2_g');
+$('.spzoom2_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.spatial_db2').addClass('spatial_db2');
+$('.spzoom2_g').show();
+$('.spzoom2_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.spzoom2_vsg').hide();
+});
+
+
+
+$('.uvcpzoom_g').on('click', function(){
+    $('.uvcpzoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+    $('.uvcpersonnel').addClass('new_uvcpzoom_g');
+    $('.uvcpzoom_vsg').show();
+    $('.uvcpzoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
+    $('.uvcpzoom_g').hide();
+    $('.uvc_website').show();
+    $('.uvc2_website').show();
+});
+
+
+$('.uvcpzoom_vsg').on('click', function(){
+$('.uvcpersonnel').removeClass('new_uvcpzoom_g');
+$('.uvcpzoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.uvcpersonnel').addClass('uvcpersonnel');
+$('.uvcpzoom_g').show();
+$('.uvcpzoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.uvcpzoom_vsg').hide();
+$('.uvc_website').show();
+$('.uvc2_website').show();
+});
+
+
+
+
+
+}
+else
+{
+   
+
+    $('.gwatney').addClass('new_zoom_g'); 
+    $('.zoom_g').show(); 
+
+    $('.zoom_g').on('click', function(){
+$('.zoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.gwatney').addClass('new_zoom_g'); 
+$('.new_zoom_g').css({'z-index':995});
+$('.zoom_vsg').show();
+$('.zoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.zoom_g').hide();
+});
+
+
+
+$('.zoom_vsg').on('click', function(){
+    $('.gwatney').removeClass('new_zoom_g');
+    $('.zoom_vsg').hide(); 
+    $('.zoom_vsg').css({"visibility": "visible", "cursor": "pointer"}); 
+    $('.gwatney').addClass('gwatney'); 
+    $('.zoom_g').show(); 
+});
+
+
+
+$('.uvclegal').addClass('new_uvczoom_g'); 
+    $('.uvczoom_g').show(); 
+
+    $('.uvczoom_g').on('click', function(){
+$('.uvczoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.uvclegal').addClass('new_uvczoom_g'); 
+$('.new_uvczoom_g').css({'z-index':995});
+$('.uvczoom_vsg').show();
+$('.uvczoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.uvczoom_g').hide();
+});
+
+
+
+$('.uvczoom_vsg').on('click', function(){
+    $('.uvclegal').removeClass('new_uvczoom_g');
+    $('.uvczoom_vsg').hide(); 
+    $('.uvczoom_vsg').css({"visibility": "visible", "cursor": "pointer"}); 
+    $('.uvclegal').addClass('uvclegal'); 
+    $('.uvczoom_g').show(); 
+});
+
+
+$('.pzoom1_g').on('click', function(){
+    $('.pzoom1_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+    $('.predictive1_').addClass('new_pzoom1_g');
+    $('.pzoom1_vsg').show();
+    $('.pzoom1_vsg').css({"visibility": "visible", "cursor": "pointer"});
+    $('.pzoom1_g').hide();
+});
+
+
+$('.pzoom1_vsg').on('click', function(){
+$('.predictive1_').removeClass('new_pzoom1_g');
+$('.pzoom1_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.predictive1_').addClass('predictive1_');
+$('.pzoom1_g').show();
+$('.pzoom1_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.pzoom1_vsg').hide();
+});
+
+$('.pzoom2_g').on('click', function(){
+    $('.pzoom2_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+    $('.predictive2_').addClass('new_pzoom2_g');
+    $('.pzoom2_vsg').show();
+    $('.pzoom2_vsg').css({"visibility": "visible", "cursor": "pointer"});
+    $('.pzoom2_g').hide();
+});
+
+
+$('.pzoom2_vsg').on('click', function(){
+    $('.predictive2_').removeClass('new_pzoom2_g');
+$('.pzoom2_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.predictive2_').addClass('predictive2_');
+$('.pzoom2_g').show();
+$('.pzoom2_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.pzoom2_vsg').hide();
+});
+
+$('.spzoom_g').on('click', function(){
+    $('.spzoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+    $('.spatial_db').addClass('new_spzoom_g');
+    $('.spzoom_vsg').show();
+    $('.spzoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
+    $('.spzoom_g').hide();
+});
+
+
+$('.spzoom_vsg').on('click', function(){
+$('.spatial_db').removeClass('new_spzoom_g');
+$('.spzoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.spatial_db').addClass('spatial_db');
+$('.spzoom_g').show();
+$('.spzoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.spzoom_vsg').hide();
+});
+
+
+$('.spzoom2_g').on('click', function(){
+    $('.spzoom2_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+    $('.spatial_db2').addClass('new_spzoom2_g');
+    $('.spzoom2_vsg').show();
+    $('.spzoom2_vsg').css({"visibility": "visible", "cursor": "pointer"});
+    $('.spzoom2_g').hide();
+});
+
+
+$('.spzoom2_vsg').on('click', function(){
+$('.spatial_db2').removeClass('new_spzoom_2g');
+$('.spzoom2_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.spatial_db2').addClass('spatial_db2');
+$('.spzoom2_g').show();
+$('.spzoom2_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.spzoom2_vsg').hide();
+});
+
+
+
+$('.uvcpzoom_g').on('click', function(){
+    $('.uvcpzoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+    $('.uvcpersonnel').addClass('new_uvcpzoom_g');
+    $('.uvcpzoom_vsg').show();
+    $('.uvcpzoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
+    $('.uvcpzoom_g').hide();
+    $('.uvc_website').show();
+    $('.uvc2_website').show();
+});
+
+
+$('.uvcpzoom_vsg').on('click', function(){
+$('.uvcpersonnel').removeClass('new_uvcpzoom_g');
+$('.uvcpzoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.uvcpersonnel').addClass('uvcpersonnel');
+$('.uvcpzoom_g').show();
+$('.uvcpzoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.uvcpzoom_vsg').hide();
+$('.uvc_website').show();
+$('.uvc2_website').show();
+});
+
+
+
+}
+
+function slide_left()
+{
+    $('.gwatney').css('animation', 'shuffle 10s alternate infinite ease-in-out');
+   
+   $('.uvclegal').css({'animation' : 'shuffle 10s alternate infinite ease-in-out'});
+   
+   $('.predictive1_').css('animation', 'shuffle 10s alternate infinite ease-in-out');
+
+   $('.predictive2_').css('animation', 'shuffle 10s alternate infinite ease-in-out');
+   
+   $('.spatial_db').css({'animation':'shuffle 10s alternate infinite ease-in-out'});
+   
+   $('.spatial_db2').css('animation', 'shuffle 10s alternate infinite ease-in-out');
+
+   $('.uvcpersonnel').css('animation', 'shuffle 10s alternate infinite ease-in-out');
+}
+
+$('.button_right').on('click', function(){
+   
+    $('.gwatney').css('animation', 'slide_right 10s forwards');
+   
+    $('.uvclegal').css({'animation' : 'slide_right 10s forwards'});
+    
+    $('.predictive1_').css('animation', 'slide_right 10s forwards');
+
+    $('.predictive2_').css('animation', 'slide_right 10s forwards');
+   
+    $('.spatial_db').css({'animation' : 'slide_right 10s forwards'});
+    
+    $('.spatial_db2').css('animation', 'slide_right 10s forwards');
+
+    $('.uvcpersonnel').css('animation', 'slide_right 10s forwards');
+
+    $('.button_right').one('mouseout', function(){
+        slide_left().delay(1);
+    });
+});
+
+
+$('.calculators').on('mouseover', function(){
+    var elem = $('.calculator_field');
+  setTimeout(function() {
+    elem.toggleClass( "calculator_field_focus", elem.is( ":focus" ) );
+  }, 0 );
+});
+
+</script>
+<script type="text/javascript">
+
+$(document).ready(function() {
+   
+const lists  = [];
+
+
+$('._1').on('click',function(){
+
+        $('.calculator_field').val(1);
+        lists.push(1);
+        var input = lists.join().toString().replace(/,/g, '');
+        $('.calculator_field').val(input); 
+        
+});
+$('._2').click(function(){
+
+        $('.calculator_field').val(2);
+        lists.push(2);
+        /*var input = lists.splice(0, lists.length);
+        $('calculator_field').val(input);
+        alert(input, lists);*/
+        var input = lists.join().toString().replace(/,/g, '');
+        $('.calculator_field').val(input); 
+});
+
+$('._3').click(function(){
+    $('.calculator_field').val(3);
+    lists.push(3);
+    var input = lists.join().toString().replace(/,/g, '');
+        $('.calculator_field').val(input); 
+});
+
+$('._4').click(function(){
+    $('.calculator_field').val(4);
+    lists.push(4);
+    var input = lists.join().toString().replace(/,/g, '');
+    $('.calculator_field').val(input); 
+});
+
+$('._5').click(function(){
+    $('.calculator_field').val(5);
+    lists.push(5);
+    var input = lists.join().toString().replace(/,/g, '');
+        $('.calculator_field').val(input); 
+});
+
+$('._6').click(function(){
+    $('.calculator_field').val(6);
+    lists.push(6);
+    var input = lists.join().toString().replace(/,/g, '');
+        $('.calculator_field').val(input); 
+});
+
+$('._7').click(function(){
+    $('.calculator_field').val(7);
+    lists.push(7);
+    var input = lists.join().toString().replace(/,/g, '');
+        $('.calculator_field').val(input); 
+});
+
+$('._8').click(function(){
+    $('.calculator_field').val(8);
+    lists.push(8);
+    var input = lists.join().toString().replace(/,/g, '');
+        $('.calculator_field').val(input); 
+});
+
+$('._9').click(function(){
+    $('.calculator_field').val(9);
+    lists.push(9);
+    var input = lists.join().toString().replace(/,/g, '');
+        $('.calculator_field').val(input); 
+});
+
+$('._0').click(function(){
+
+    $('.calculator_field').val(0);
+    lists.push(0);
+    var input = lists.join().toString().replace(/,/g, '');
+        $('.calculator_field').val(input); 
+});
+
+
+const this_operation =  []; 
+
+
+$('._log').on('click', function(){
+    lists.push(' log ');
+    alert(lists);
+    $('.calculator_field').val(' log ');
+    return this_operation.push('log');
+       
+});
+
+
+
+/*$('._log','._cos','._sin','._tan', '._add','._subtract','._multiply','._divide').click(function(){
+    lists.pop();
+    const first_value_ = input;
+    alert(first_value_);
+    const second_value = input;
+    
+});*/
+const first_value_ = [];
+const second_value_ = [];
+let operation = '';
+let requestData = {};
+let apiUrl = '';
+var  first_value = '';
+var second_value = '';
+const data = {};
+$('.equity').on('click', function(){
+    if (this_operation[0] == 'log')
+    {
+
+        var index = lists.indexOf(' log ');
+        
+        lists.splice(index, lists.length);
+
+        first_value_.push(lists);
+
+        first_value = String(first_value_).replaceAll(',','');
+        alert(first_value);
+        var values_ = $('.calculator_field').val();
+        alert(values_.length);
+        alert(values_[values_.length-1]);
+        second_value_.push(values_[values_.length-1]);
+        second_value = second_value_[0];
+        alert(second_value);
+        operation = this_operation[0];
+        alert(operation);
+      
+
+ 
+        //requestData = {
+            number://first_value
+        //};
+        // Corrected requestData usage and API call
+            requestData = first_value; // Assuming 'first_value' is correctly set elsewhere in your code
+            alert(requestData);
+            //apiUrl = "http://127.0.0.1:3000/log";
+            apiUrl = "http://127.0.0.1:3000/log?number=" + encodeURIComponent(first_value);
+
+            
+
+                                
+
+        const data = { number:first_value };
+        // Function to send POST data to the API
+
+        postData(apiUrl);
+
+            async function postData(apiUrl = "") {
+                try {
+                    // Default options are marked with *
+                    const response = await fetch(apiUrl, {
+                        method: "GET", // *GET, POST, PUT, DELETE, etc.
+                        mode: "cors", // no-cors, *cors, same-origin
+                        cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+                        credentials: "same-origin", // include, *same-origin, omit
+                        headers: {
+                            "Content-Type": "application/json",
+                            // 'Content-Type': 'application/x-www-form-urlencoded',
+                        },
+                        redirect: "follow", // manual, *follow, error
+                        referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+                        body: JSON.stringify(data), // body data type must match "Content-Type" header
+                    });
+
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    alert(response.json()); // parses JSON response into native JavaScript objects
+                } catch (error) {
+                    console.error('Error:', error.message);
+                }
+
+                    
+            }
+            
+        }
+
+        });
+               // postData(apiUrl, { number: first_value }).then((data) => {
+                //    console.log(data); // JSON data parsed by `data.json()` call
+                //});
+
+}); 
+
+</script>

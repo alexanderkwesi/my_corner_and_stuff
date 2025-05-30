@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+  "allowJs": true,
+  "target":"ES2016",
+  "sourceMap":true,
+  "noImplicitAny": true,
+  "module":"CommonJS",
+  "rootDir": "./src",
+  "outDir":"./dist",
+  "noEmitOnError": true,
+  "removeComments": true,
+  "noUnusedLocals":true,
+  "noUnusedParameters": true
+  },
+  "files": [
+    "src/app.ts",
+    "src/greeter.ts",
+    "src/dates.ts"
+  ],
+  "plugins": [{ "name": "typescript-plugin-css-modules"}],
+  "exclude":["none modules"]
+}
