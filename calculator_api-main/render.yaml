@@ -1,0 +1,13 @@
+# Exported from Render on 2025-05-30T05:30:57Z
+services:
+- type: web
+  name: calculator_api
+  runtime: static
+  repo: https://github.com/alexanderkwesi/calculator_api
+  envVars:
+  - key: NODE_VERSION
+    sync: false
+  buildCommand: npm prune; npm install; npm run build
+  staticPublishPath: ./
+  autoDeployTrigger: checksPass
+version: "1"

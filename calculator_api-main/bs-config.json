@@ -1,0 +1,33 @@
+{
+  injectChanges: false,
+  files: [
+    'src/**/*.html',
+    'src/**/*.css',
+    'src/**/*.ts',
+    'src/**/*.tsx',
+    'src/**/*.js',
+    'src/images/**/*'
+  ],
+  watchOptions: {
+    ignored: 'node_modules'
+  },
+  proxy: '0.0.0.0:process.env.PORT',
+  watchEvents: [
+    'change', 'add', 'addDir', 'unlink', 'unlinkDir'
+  ],
+  port: process.env.PORT,
+  open: true,
+  notify: false,
+  ui: {
+    port: 3002
+  },
+  reloadOnRestart: true,
+  logLevel: 'info',
+  logPrefix: 'BS',
+  logConnections: true,
+  logFileChanges: true,
+  logSnippet: true
+},
+  "server": {
+    "baseDir": "./"
+  }
