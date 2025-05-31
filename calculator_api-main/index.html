@@ -1334,7 +1334,7 @@ async function addNumbers(value, operation) {
 
     // Perform an AJAX request to evaluate the expression
     $.ajax({
-        url: "https://44.226.145.213:10000/evaluate", // Backend endpoint
+        url: "https://127.0.0.1:3000/evaluate", // Backend endpoint
         type: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -1377,7 +1377,7 @@ async function addNumbers(value, operation) {
 
  // Create a Promise that wraps the $.ajax call
            $.ajax({
-    url: `https://44.226.145.213:10000/${operation}`, // URL of the backend API
+    url: `https://127.0.0.1:3000/${operation}`, // URL of the backend API
     type: 'POST',  // Use POST method
     contentType: 'application/json', // Correct content type for JSON
     dataType: "json",  // Expecting a JSON response
